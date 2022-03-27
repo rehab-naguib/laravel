@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Post;
+
+class PostController extends Controller
+{
+    function index(){
+        return Post::all();
+    }
+}
